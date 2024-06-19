@@ -43,20 +43,20 @@ const News = (props)=>{
         let parsedData = await data.json()
         setArticles(articles.concat(parsedData.articles))
         setTotalResults(parsedData.totalResults)
-      };
- 
-        return (
-            <>
-                <h1 className="text-center" style={{ margin: '35px 0px', marginTop: '90px' }}>NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
-                {loading && <Spinner />}
-                <InfiniteScroll
-                    dataLength={articles.length}
-                    next={fetchMoreData}
-                    hasMore={articles.length !== totalResults}
-                    loader={<Spinner/>}
-                > 
-                    <div className="container">
-                         
+    };
+
+    return (
+        <>
+            <h1 className="text-center" style={{ margin: '35px 0px', marginTop: '70px', marginBottom: '5px'}}>NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
+            {loading && <Spinner />}
+            <InfiniteScroll
+                dataLength={articles.length}
+                next={fetchMoreData}
+                hasMore={articles.length !== totalResults}
+                loader={<Spinner/>}
+            > 
+                <div className="container">
+
                     <div className="row">
                         {articles.map((element) => {
                             return <div className="col-md-4" key={element.url}>
@@ -64,11 +64,10 @@ const News = (props)=>{
                             </div>
                         })}
                     </div>
-                    </div> 
-                </InfiniteScroll>
-            </>
-        )
-    
+                </div> 
+            </InfiniteScroll>
+        </>
+    )
 }
 
 
