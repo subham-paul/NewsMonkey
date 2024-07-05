@@ -10,9 +10,13 @@ NewsMonkey is a dynamic and user-friendly news website that fetches news data fr
 - **News Badges**: Quickly identify the source of news articles with source badges.
 - **Responsive Design**: Optimized for all screen sizes, providing a great user experience on both desktop and mobile devices.
 
-## Demo
+## Demo Of This Project:
 
-Check out the live demo: [NewsMonkey](https://your-demo-link.com)
+
+
+![NewsMonkey-GIF](https://github.com/subham-paul/NewsMonkey/assets/52645265/fa806208-3202-4c39-912b-fd9567476adc)
+
+
 
 ## Installation
 
